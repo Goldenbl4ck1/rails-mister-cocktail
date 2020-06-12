@@ -11,8 +11,13 @@
     justify-content: center;
 }
 
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .card-product {
-   
+    margin-top: 15px;
     margin-bottom: 15px;
     overflow: hidden;
     height: 120px;
