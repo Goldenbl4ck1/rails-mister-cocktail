@@ -1,0 +1,26 @@
+
+
+<div class="bodycock">
+<h1>Cocktails<h1>
+
+
+<table>
+
+  <tbody>
+    <% @cocktails.each do |cocktail| %>
+      <tr>
+          <div class="card-product">
+            <img src="https://www.aperocube.fr/wp-content/uploads/2018/01/whisky-coca.jpg" />
+          <div class="card-product-infos">
+            <h2><%= cocktail.name %></h2>
+         <%= link_to "Dose", cocktail_path(cocktail), class: 'card-link' %>
+          </div>
+          </div>
+       
+
+      </tr>
+    <% end %>
+  </tbody>
+  <%= link_to "create",  new_cocktail_path %>
+</table>
+ </div>
